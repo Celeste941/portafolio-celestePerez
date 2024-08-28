@@ -82,6 +82,20 @@ nav.nav_menu.active {
 .container_btn--proyectos button {
   width: 20.6rem;
 }
+/* Estilos específicos para pantallas de tabletas y móviles */
+
+@media only screen and (max-width: 767px) {
+  .cards_container--proyectos {
+    margin: 0 auto;
+    padding: 0 1rem; /* Asegura que haya espacio a los lados */
+  }
+
+  .cards--proyectos {
+    margin: 0.5rem; /* Ajusta el margen según sea necesario */
+    width: calc(100% - 2rem); /* Asegura que las tarjetas ocupen el ancho disponible menos el margen */
+  }
+}
+
 
 /* Contacto */
 .container--contacto {
