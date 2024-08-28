@@ -14,13 +14,13 @@
   --jet: #292929;
 
   /* colores prueba */
-    /* Colores principales */
-    --color-very-light-gray: #F0F0F0;
-    --color-medium-gray: #A0A0A0;
-    --color-black: #000000;
-    --color-light-gray: #D0D0D0;
-    --color-dark-gray: #606060;
-    /* Negro (#000000): Utilizado para texto principal y detalles importantes.
+  /* Colores principales */
+  --color-very-light-gray: #F0F0F0;
+  --color-medium-gray: #A0A0A0;
+  --color-black: #000000;
+  --color-light-gray: #D0D0D0;
+  --color-dark-gray: #606060;
+  /* Negro (#000000): Utilizado para texto principal y detalles importantes.
 Gris Muy Claro (#F0F0F0): Ideal para fondos generales para mantener el diseño ligero y aireado.
 Gris Claro (#D0D0D0): Bueno para fondos de tarjetas o secciones que necesitan un contraste suave.
 Gris Medio (#A0A0A0): Perfecto para elementos secundarios y para dar más profundidad.
@@ -28,25 +28,35 @@ Gris Oscuro (#606060): Útil para botones, enlaces y texto importante que necesi
 }
 
 :root {
-/* Colores a usar */
-  --beige-claro-backgraund:#F2EFEA;
-  --beige-navbar:#ECE5D9;
-  --beige-coral:#EDDED3;
+  /* Colores a usar */
+  --beige-claro-backgraund: #F2EFEA;
+  --beige-navbar: #ECE5D9;
+  --beige-coral: #EDDED3;
   --gris-oscuro-azulado: #3e436e;
-}
-:root {
-  --beige-claro-background: #E0F7F9; /* Turquesa claro para el fondo */
-  --beige-navbar: #00B2A9; /* Turquesa medio para la barra de navegación */
-  --beige-coral: #008C8C; /* Turquesa oscuro para detalles destacados */
-  --gris-oscuro-azulado: #2C2C2C; /* Gris carbón para contrastes y detalles oscuros */
 }
 
 :root {
-  --beige-claro-background: #E0F7F9; /* Turquesa claro para el fondo */
-  --beige-navbar: #00B2A9; /* Turquesa medio para la barra de navegación */
-  --beige-coral: #008C8C; /* Turquesa oscuro para detalles destacados */
-  --gris-oscuro-azulado: #2C2C2C; /* Gris carbón para contrastes y detalles oscuros */
-  --gris-claro: #F5F5F5; /* Gris claro para contrastar con el fondo */
+  --beige-claro-background: #E0F7F9;
+  /* Turquesa claro para el fondo */
+  --beige-navbar: #00B2A9;
+  /* Turquesa medio para la barra de navegación */
+  --beige-coral: #008C8C;
+  /* Turquesa oscuro para detalles destacados */
+  --gris-oscuro-azulado: #2C2C2C;
+  /* Gris carbón para contrastes y detalles oscuros */
+}
+
+:root {
+  --beige-claro-background: #E0F7F9;
+  /* Turquesa claro para el fondo */
+  --beige-navbar: #00B2A9;
+  /* Turquesa medio para la barra de navegación */
+  --beige-coral: #008C8C;
+  /* Turquesa oscuro para detalles destacados */
+  --gris-oscuro-azulado: #2C2C2C;
+  /* Gris carbón para contrastes y detalles oscuros */
+  --gris-claro: #F5F5F5;
+  /* Gris claro para contrastar con el fondo */
 }
 
 
@@ -77,7 +87,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 ::selection {
-  background-color:var(--color-dark-gray);
+  background-color: var(--color-dark-gray);
 }
 
 /* Header */
@@ -125,6 +135,7 @@ nav.nav_menu.active {
   0% {
     left: 100%;
   }
+
   100% {
     left: 0;
   }
@@ -189,7 +200,7 @@ nav.nav_menu.not-active .flags {
   position: relative;
 }
 
-span + span {
+span+span {
   margin-top: 0.6rem;
 }
 
@@ -222,10 +233,12 @@ span + span {
     top: 0;
     transform: rotate(0);
   }
+
   50% {
     top: 1rem;
     transform: rotate(0);
   }
+
   100% {
     top: 1rem;
     transform: rotate(45deg);
@@ -237,10 +250,12 @@ span + span {
     top: 0.8rem;
     transform: rotate(45deg);
   }
+
   50% {
     top: 0.8rem;
     transform: rotate(0deg);
   }
+
   100% {
     top: 0;
     transform: rotate(0deg);
@@ -252,10 +267,12 @@ span + span {
     bottom: 0;
     transform: rotate(0);
   }
+
   50% {
     bottom: 0.8rem;
     transform: rotate(0);
   }
+
   100% {
     bottom: 0.8rem;
     transform: rotate(135deg);
@@ -267,10 +284,12 @@ span + span {
     bottom: 0.8rem;
     transform: rotate(135deg);
   }
+
   50% {
     bottom: 0.8rem;
     transform: rotate(0);
   }
+
   100% {
     bottom: 0;
     transform: rotate(0);
@@ -281,6 +300,7 @@ span + span {
   50% {
     transform: scale(0);
   }
+
   100% {
     transform: scale(0);
   }
@@ -290,9 +310,11 @@ span + span {
   0% {
     transform: scale(0);
   }
+
   50% {
     transform: scale(0);
   }
+
   100% {
     transform: scale(1);
   }
@@ -380,11 +402,11 @@ span + span {
 
 /* Boton para descargar el curriculum */
 .cv_button {
-  border-radius: 3rem ;
+  border-radius: 3rem;
   border: 1px solid var(--gris-oscuro-azulado) !important;
   padding: 0.6rem 2rem 0.5rem 2rem;
   color: var(--gris-oscuro-azulado) !important;
-  background-color:var(--beige-coral);
+  background-color: var(--beige-coral);
   font-family: "Cooper Hewitt";
   font-weight: bold;
   font-size: 1.6rem;
@@ -395,21 +417,21 @@ span + span {
   cursor: pointer;
 }
 
-.cv_button:hover{
+.cv_button:hover {
   border: 1px solid var(--gris-oscuro-azulado) !important;
   color: var(--gris-oscuro-azulado) !important;
-  background-color:var(--beige-coral) !important;
+  background-color: var(--beige-coral) !important;
   transition: all 0.4s ease !important;
 
 }
 
 .contact_button {
   display: none;
-  background-color:var(--gris-oscuro-azulado) !important;
+  background-color: var(--gris-oscuro-azulado) !important;
   color: var(--beige-coral) !important;
 }
 
-.contact_button:hover{
+.contact_button:hover {
   transition: all 0.4s ease !important;
 }
 
@@ -427,13 +449,14 @@ span + span {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.icon-linkedin, .icon-github {
+.icon-linkedin,
+.icon-github {
   background-color: var(--gris-oscuro-azulado);
 }
 
 .links img:hover {
   transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(62, 67, 110, 0.5); 
+  box-shadow: 0 4px 8px rgba(62, 67, 110, 0.5);
 }
 
 .image_home--border {
@@ -480,7 +503,7 @@ span + span {
   padding: 4rem 3rem 3rem 3rem;
 }
 
-.container_texto-sobreMi p{
+.container_texto-sobreMi p {
   text-align: justify;
 }
 
@@ -502,7 +525,8 @@ span + span {
   white-space: pre-line;
   text-align: justify;
   line-height: 2.2rem;
-  margin-bottom: 1.5rem; /* Espacio entre los párrafos */
+  margin-bottom: 1.5rem;
+  /* Espacio entre los párrafos */
 }
 
 .container_image-sobreMi {
@@ -526,17 +550,24 @@ span + span {
 
 
 :root {
-  --beige-claro-background: #E0F7F9; /* Turquesa claro para el fondo */
-  --beige-navbar: #00B2A9; /* Turquesa medio para la barra de navegación */
-  --beige-coral: #008C8C; /* Turquesa oscuro para detalles destacados */
-  --gris-oscuro-azulado: #2C2C2C; /* Gris carbón para contrastes y detalles oscuros */
-  --gris-claro: #F5F5F5; /* Gris claro para las tarjetas */
-  --gris-medio: #D1D1D1; /* Gris medio para más contraste en tarjetas */
+  --beige-claro-background: #E0F7F9;
+  /* Turquesa claro para el fondo */
+  --beige-navbar: #00B2A9;
+  /* Turquesa medio para la barra de navegación */
+  --beige-coral: #008C8C;
+  /* Turquesa oscuro para detalles destacados */
+  --gris-oscuro-azulado: #2C2C2C;
+  /* Gris carbón para contrastes y detalles oscuros */
+  --gris-claro: #F5F5F5;
+  /* Gris claro para las tarjetas */
+  --gris-medio: #D1D1D1;
+  /* Gris medio para más contraste en tarjetas */
 }
 
 /* Habilidades */
 .habilidades {
-  background-color: var(--beige-claro-background); /* Fondo de sección */
+  background-color: var(--beige-claro-background);
+  /* Fondo de sección */
   width: 100%;
   padding: 4rem 2rem;
 }
@@ -555,7 +586,8 @@ span + span {
 /* Responsive grid for cards */
 .cards_container--habilidades {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive columns */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  /* Responsive columns */
   gap: 2rem;
   justify-content: center;
   padding-bottom: 5rem;
@@ -563,7 +595,8 @@ span + span {
 
 /* Card styles */
 .cards--habilidades {
-  background: var(--gris-claro); /* Fondo gris claro para las tarjetas */
+  background: var(--gris-claro);
+  /* Fondo gris claro para las tarjetas */
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -572,7 +605,8 @@ span + span {
   text-align: center;
   width: 12rem;
   height: 12rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Sombra sutil */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -585,7 +619,8 @@ span + span {
 
 /* Card text styles */
 .cards--habilidades p {
-  color: var(--gris-oscuro-azulado); /* Texto oscuro para mayor contraste */
+  color: var(--gris-oscuro-azulado);
+  /* Texto oscuro para mayor contraste */
   font-family: "Cooper Hewitt", sans-serif;
   font-size: 1.4rem;
   margin-top: 1rem;
@@ -593,8 +628,10 @@ span + span {
 
 /* Hover effect */
 .cards--habilidades:hover {
-  transform: scale(1.05); /* Slightly increase size */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Intensify shadow on hover */
+  transform: scale(1.05);
+  /* Slightly increase size */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  /* Intensify shadow on hover */
 }
 
 /* Hover image effect */
@@ -604,6 +641,7 @@ span + span {
 
 /* Hide specific images on mobile */
 @media (max-width: 768px) {
+
   .puntos1-habilidades,
   .puntos2-habilidades {
     display: none;
@@ -731,7 +769,7 @@ img.logo-one {
   max-width: 38rem;
   box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%),
     0 25px 10px -24px rgb(5 5 5 / 10%);
-    
+
 }
 
 .card_JuegoAhorcado {
@@ -815,6 +853,7 @@ img.logo-one {
   width: 2rem;
   margin-right: 0.8rem;
 }
+
 .btn_repo img {
   width: 2rem;
   margin-right: 0.8rem;
@@ -859,6 +898,7 @@ img.logo-one {
 .container--contacto {
   width: 100%;
   background-color: var(--beige-claro-backgraund);
+  border: 1px solid var(--light-grey);
   border-radius: 24px;
   padding: 3rem;
   position: relative;
@@ -868,7 +908,7 @@ img.logo-one {
   width: 100%;
 }
 
-.container_text-info p{
+.container_text-info p {
   color: var(--gris-oscuro-azulado);
 }
 
@@ -906,12 +946,12 @@ img.logo-one {
 
 .form-contact textarea {
   background: transparent;
-  border: 1px solid var(--gris-oscuro-azulado);
+  border: 1px solid var(--light-grey);
   font-family: "Cooper Hewitt";
   width: 100%;
   padding: 1rem;
   border-radius: 1rem;
-  color: var(--color-very-light-gray);
+  color: var(--gris-oscuro-azulado);
   font-size: 1.6rem;
   outline: none;
   margin-bottom: 3rem;
@@ -928,7 +968,7 @@ img.logo-one {
 }
 
 .form-contact textarea::-webkit-scrollbar-track {
-  background-color:var(--gris-oscuro-azulado);
+  background-color: var(--gris-oscuro-azulado);
 }
 
 .form-contact textarea::-webkit-scrollbar-thumb {
@@ -942,7 +982,7 @@ img.logo-one {
 
 .btn_form--contacto button {
   background-color: var(--beige-claro-backgraund);
-  border: 1px solid var(--gris-oscuro-azulado);
+  border: 1px solid var(--light-grey);
   font-family: "Cooper Hewitt";
   width: 20rem;
   padding: 0.8rem 1rem;
@@ -955,12 +995,13 @@ img.logo-one {
 }
 
 .btn_form--contacto button:hover {
-background-color: var(--beige-claro-backgraund);
+  background-color: var(--beige-claro-backgraund);
   color: var(--gris-oscuro-azulado);
   font-weight: bold;
   transform: scale(1.1);
   box-shadow: 0px 9px 15px -1px rgba(0, 0, 0, 0.2);
   transition: all 0.4s ease;
+  border: 1px solid var(--gris-oscuro-azulado);
 }
 
 .btn_form--contacto button:active {
@@ -1038,7 +1079,7 @@ footer {
   width: 0rem;
   height: 0rem;
   background-color: var(--color-medium-gray);
-   /* background: rgba(167, 137, 118, 1);  PARA CAMBIAR EL COLOR DE BOTON IR ARRIBA*/ 
+  /* background: rgba(167, 137, 118, 1);  PARA CAMBIAR EL COLOR DE BOTON IR ARRIBA*/
   box-shadow: 0px 6px 22px -6px rgba(0, 0, 0, 0.75);
   border-radius: 50%;
   cursor: pointer;
@@ -1079,15 +1120,18 @@ footer {
     width: 0;
     height: 0;
   }
+
   50% {
     width: 7rem;
     height: 7rem;
   }
+
   100% {
     width: 6rem;
     height: 6rem;
   }
 }
+
 .footer-by {
   color: #ffffff;
 }
