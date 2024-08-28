@@ -1,5 +1,4 @@
 /* desktop.css */
-
 .header {
   justify-content: space-between;
   padding: 0.8rem 3rem;
@@ -23,10 +22,13 @@ nav.nav_menu a {
 
 nav.nav_menu a:hover,
 nav.nav_menu a.active {
-  color: var(--beige-claro-background);
+  color: var(--gris-oscuro-azulado);
   padding: 0.5rem;
   border-bottom: 1px solid var(--gris-oscuro-azulado);
-  transition: all 0.5s;
+  transform: scale(1.05);
+  /* Incrementa el tamaño en un 5% */
+  transition: all 0.5s ease-in-out;
+  /* Suaviza la transición */
 }
 
 nav.nav_menu.not-active a {
@@ -55,7 +57,6 @@ div.btn {
 }
 
 /* Home */
-
 .home {
   display: flex;
   flex-direction: row-reverse;
@@ -172,12 +173,7 @@ div.btn {
   margin: 0.7rem 0 0.7rem 0;
 }
 
-/* .links .icon-CodePen {
-  margin: 0.7rem 0 0.7rem 0.2rem;
-} */
-
 /* Sobre Mí */
-
 .sobreMi {
   padding-bottom: 4rem;
 }
@@ -210,7 +206,6 @@ div.btn {
 }
 
 /* Habilidades */
-
 .habilidades {
   padding-bottom: 8rem;
   position: relative;
@@ -258,7 +253,6 @@ div.btn {
 }
 
 /* Formación */
-
 .formacion {
   padding-bottom: 2rem;
   position: relative;
@@ -270,7 +264,7 @@ div.btn {
 }
 
 .cards--formacion:hover {
-  border: 1px solid var(--beige-coral);
+  border: 1px solid var(--color-light-gray);
   box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%),
     0 25px 10px -24px rgb(5 5 5 / 10%);
   transform: scale(1.1);
@@ -278,7 +272,6 @@ div.btn {
 }
 
 /* Proyectos */
-
 .proyectos h1 {
   padding-top: 8rem;
   font-size: 3rem;
@@ -325,7 +318,6 @@ div.btn {
 }
 
 /* Contacto */
-
 .contacto h1 {
   padding: 8rem 0 2.5rem 0;
   font-size: 3rem;

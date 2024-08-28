@@ -7,59 +7,15 @@
 
 :root {
   --white: #ffffff;
-  --light-grey: #d9d9d9;
-  --beaver: #a78976;
-  --black: #141414;
-  --eerie-black: #1f1f1f;
-  --jet: #292929;
-
-  /* colores prueba */
-  /* Colores principales */
-  --color-very-light-gray: #F0F0F0;
-  --color-medium-gray: #A0A0A0;
-  --color-black: #000000;
-  --color-light-gray: #D0D0D0;
-  --color-dark-gray: #606060;
-  /* Negro (#000000): Utilizado para texto principal y detalles importantes.
-Gris Muy Claro (#F0F0F0): Ideal para fondos generales para mantener el diseño ligero y aireado.
-Gris Claro (#D0D0D0): Bueno para fondos de tarjetas o secciones que necesitan un contraste suave.
-Gris Medio (#A0A0A0): Perfecto para elementos secundarios y para dar más profundidad.
-Gris Oscuro (#606060): Útil para botones, enlaces y texto importante que necesita destacar */
-}
-
-:root {
-  /* Colores a usar */
-  --beige-claro-backgraund: #F2EFEA;
-  --beige-navbar: #ECE5D9;
-  --beige-coral: #EDDED3;
-  --gris-oscuro-azulado: #3e436e;
-}
-
-:root {
-  --beige-claro-background: #E0F7F9;
-  /* Turquesa claro para el fondo */
-  --beige-navbar: #00B2A9;
-  /* Turquesa medio para la barra de navegación */
-  --beige-coral: #008C8C;
-  /* Turquesa oscuro para detalles destacados */
+  --light-grey: #d9d9d9; /*Fondo de las Cards de la seccion proyectos, borde del formulario (input,textarea y button), Color de las letrsa del footer*/
+  --gris-claro: #F5F5F5; /* Fondo gris claro para las tarjetas de habilidades */
+  --turquesa-cyan: #E0F7F9; /*Fondo especial para la sección de habilidades*/
+  --beige-claro-backgraund: #F2EFEA;/*Fondo navbar active, fondo del home, de seccion proyectos, formulario , */
+  --turquesa-aguamarina: #00B2A9; /*color del navbar, navbar active (hover)*/
+  --turquesa-teal: #008C8C;/*Boton cv, color boton contacto*/
   --gris-oscuro-azulado: #2C2C2C;
-  /* Gris carbón para contrastes y detalles oscuros */
+  --gris-clarito: #e7f1f192;
 }
-
-:root {
-  --beige-claro-background: #E0F7F9;
-  /* Turquesa claro para el fondo */
-  --beige-navbar: #00B2A9;
-  /* Turquesa medio para la barra de navegación */
-  --beige-coral: #008C8C;
-  /* Turquesa oscuro para detalles destacados */
-  --gris-oscuro-azulado: #2C2C2C;
-  /* Gris carbón para contrastes y detalles oscuros */
-  --gris-claro: #F5F5F5;
-  /* Gris claro para contrastar con el fondo */
-}
-
-
 
 * {
   box-sizing: border-box;
@@ -91,9 +47,8 @@ html::-webkit-scrollbar-thumb {
 }
 
 /* Header */
-
 .header {
-  background-color: var(--beige-navbar);
+  background-color: var(--turquesa-aguamarina);
   padding: 0.8rem 3rem;
   display: flex;
   justify-content: space-between;
@@ -154,7 +109,7 @@ nav.nav_menu.active a {
 
 nav.nav_menu.active a:hover {
   color: var(--gris-oscuro-azulado);
-  background-color: var(--beige-navbar);
+  background-color: var(--turquesa-aguamarina);
   transition: all 0.4s;
 }
 
@@ -321,7 +276,6 @@ span+span {
 }
 
 /* Home */
-
 .home {
   background-color: var(--beige-claro-backgraund);
   width: 100%;
@@ -399,14 +353,13 @@ span+span {
   display: none;
 }
 
-
 /* Boton para descargar el curriculum */
 .cv_button {
   border-radius: 3rem;
   border: 1px solid var(--gris-oscuro-azulado) !important;
   padding: 0.6rem 2rem 0.5rem 2rem;
   color: var(--gris-oscuro-azulado) !important;
-  background-color: var(--beige-coral);
+  background-color: var(--turquesa-teal);
   font-family: "Cooper Hewitt";
   font-weight: bold;
   font-size: 1.6rem;
@@ -420,7 +373,7 @@ span+span {
 .cv_button:hover {
   border: 1px solid var(--gris-oscuro-azulado) !important;
   color: var(--gris-oscuro-azulado) !important;
-  background-color: var(--beige-coral) !important;
+  background-color: var(--turquesa-teal) !important;
   transition: all 0.4s ease !important;
 
 }
@@ -428,7 +381,7 @@ span+span {
 .contact_button {
   display: none;
   background-color: var(--gris-oscuro-azulado) !important;
-  color: var(--beige-coral) !important;
+  color: var(--turquesa-teal) !important;
 }
 
 .contact_button:hover {
@@ -474,8 +427,6 @@ span+span {
     /* Difuminado aún más sutil para pantallas pequeñas */
   }
 }
-
-
 
 /* Sobre mí */
 .sobreMi {
@@ -547,27 +498,9 @@ span+span {
   mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.3) 1%);
 }
 
-
-
-:root {
-  --beige-claro-background: #E0F7F9;
-  /* Turquesa claro para el fondo */
-  --beige-navbar: #00B2A9;
-  /* Turquesa medio para la barra de navegación */
-  --beige-coral: #008C8C;
-  /* Turquesa oscuro para detalles destacados */
-  --gris-oscuro-azulado: #2C2C2C;
-  /* Gris carbón para contrastes y detalles oscuros */
-  --gris-claro: #F5F5F5;
-  /* Gris claro para las tarjetas */
-  --gris-medio: #D1D1D1;
-  /* Gris medio para más contraste en tarjetas */
-}
-
 /* Habilidades */
 .habilidades {
-  background-color: var(--beige-claro-background);
-  /* Fondo de sección */
+  background-color: var(--turquesa-cyan);
   width: 100%;
   padding: 4rem 2rem;
 }
@@ -596,7 +529,6 @@ span+span {
 /* Card styles */
 .cards--habilidades {
   background: var(--gris-claro);
-  /* Fondo gris claro para las tarjetas */
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -648,10 +580,6 @@ span+span {
   }
 }
 
-
-
-
-
 /* Estudios */
 
 .formacion {
@@ -680,7 +608,7 @@ span+span {
 }
 
 .cards--formacion {
-  background-color: var(--beige-claro-backgraund);
+  background-color: var(--gris-clarito);
   border-radius: 24px;
   display: flex;
   flex-direction: column;
@@ -764,19 +692,26 @@ img.logo-one {
 .cards--proyectos {
   border-radius: 20px;
   padding-bottom: 2rem;
-  background-color: var(--color-very-light-gray);
+  background-color: var(--gris-clarito);
   min-width: 33rem;
   max-width: 38rem;
-  box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%),
-    0 25px 10px -24px rgb(5 5 5 / 10%);
-
+  box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%);
+  transition: all 0.3s ease;
 }
 
-.card_JuegoAhorcado {
+.cards--proyectos:hover {
+  transform: scale(1); 
+  box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.4), 0 30px 15px -20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+  border: 2px solid var(--light-grey);
+  
+}
+
+.card_pokeApi {
   margin-bottom: 4rem;
+  
 }
 
-.card_portafolio {
+.card_portafolio, .card_template {
   margin-bottom: 4rem;
   border: 1px solid var(--color-medium-gray);
 }
@@ -788,6 +723,7 @@ img.logo-one {
 
 .container_imgCard--proyectos img {
   width: 100%;
+  height: 20rem;
   border-radius: 20px 20px 0 0;
 }
 
@@ -861,19 +797,18 @@ img.logo-one {
 }
 
 .container_btn--proyectos .btn_demo:hover {
-  background: var(--beige-coral);
+  background: var(--turquesa-teal);
   box-shadow: 0px 13px 33px -14px rgba(0, 0, 0, 0.75);
   transition: all 0.4s ease;
 }
 
 .container_btn--proyectos .btn_repo:hover {
-  background: var(--beige-coral);
+  background: var(--turquesa-teal);
   box-shadow: 0px 13px 33px -14px rgba(0, 0, 0, 0.75);
   transition: all 0.4s ease;
 }
 
 /* Contacto */
-
 .contacto {
   background-color: var(--white);
   width: 100%;
@@ -1010,7 +945,6 @@ img.logo-one {
 }
 
 /* Footer */
-
 footer {
   background-color: var(--gris-oscuro-azulado);
 }
@@ -1066,7 +1000,6 @@ footer {
 }
 
 /* Botón ir arriba */
-
 .go-top-container {
   position: fixed;
   bottom: 1rem;

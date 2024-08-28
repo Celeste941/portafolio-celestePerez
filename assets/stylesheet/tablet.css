@@ -1,7 +1,6 @@
 /* tablet.css */
 
 /* Header */
-
 nav.nav_menu.active {
   width: 50%;
   margin-left: 50%;
@@ -9,7 +8,6 @@ nav.nav_menu.active {
 }
 
 /* Home */
-
 .image_home {
   max-width: 50rem;
 }
@@ -30,7 +28,6 @@ nav.nav_menu.active {
 }
 
 /* Sobre mi */
-
 .sobreMi {
   padding: 0 2rem;
   display: flex;
@@ -63,13 +60,11 @@ nav.nav_menu.active {
 }
 
 /* Habilidades */
-
 .cards_container--habilidades {
   column-gap: 4rem;
 }
 
 /* Formación */
-
 .cards_container--formacion {
   flex-wrap: wrap;
   flex-direction: row;
@@ -80,7 +75,6 @@ nav.nav_menu.active {
 }
 
 /* Proyectos */
-
 .cards--proyectos {
   max-width: 48rem;
 }
