@@ -38,7 +38,7 @@ El proyecto está organizado de la siguiente manera:
 
 ## Cómo Ver mi Portafolio
 
-Puedes ver mi portafolio en el siguiente enlace: [Ver Portafolio](https://celeste941.github.io/portfolio/)
+Puedes ver mi portafolio en el siguiente enlace: [Ver Portafolio](https://celeste941.github.io/portafolio-celestePerez)
 
 ## Contacto
 
