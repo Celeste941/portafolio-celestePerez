@@ -1,0 +1,1093 @@
+/* index.css */
+@font-face {
+  font-family: "Cooper Hewitt";
+  src: url("../fonts/CooperHewitt-Light.woff") format("woff"),
+    url("../fonts/CooperHewitt-Thin.woff") format("woff");
+}
+
+:root {
+  --white: #ffffff;
+  --light-grey: #d9d9d9;
+  --beaver: #a78976;
+  --black: #141414;
+  --eerie-black: #1f1f1f;
+  --jet: #292929;
+
+  /* colores prueba */
+    /* Colores principales */
+    --color-very-light-gray: #F0F0F0;
+    --color-medium-gray: #A0A0A0;
+    --color-black: #000000;
+    --color-light-gray: #D0D0D0;
+    --color-dark-gray: #606060;
+    /* Negro (#000000): Utilizado para texto principal y detalles importantes.
+Gris Muy Claro (#F0F0F0): Ideal para fondos generales para mantener el diseño ligero y aireado.
+Gris Claro (#D0D0D0): Bueno para fondos de tarjetas o secciones que necesitan un contraste suave.
+Gris Medio (#A0A0A0): Perfecto para elementos secundarios y para dar más profundidad.
+Gris Oscuro (#606060): Útil para botones, enlaces y texto importante que necesita destacar */
+}
+
+:root {
+/* Colores a usar */
+  --beige-claro-backgraund:#F2EFEA;
+  --beige-navbar:#ECE5D9;
+  --beige-coral:#EDDED3;
+  --gris-oscuro-azulado: #3e436e;
+}
+:root {
+  --beige-claro-background: #E0F7F9; /* Turquesa claro para el fondo */
+  --beige-navbar: #00B2A9; /* Turquesa medio para la barra de navegación */
+  --beige-coral: #008C8C; /* Turquesa oscuro para detalles destacados */
+  --gris-oscuro-azulado: #2C2C2C; /* Gris carbón para contrastes y detalles oscuros */
+}
+
+:root {
+  --beige-claro-background: #E0F7F9; /* Turquesa claro para el fondo */
+  --beige-navbar: #00B2A9; /* Turquesa medio para la barra de navegación */
+  --beige-coral: #008C8C; /* Turquesa oscuro para detalles destacados */
+  --gris-oscuro-azulado: #2C2C2C; /* Gris carbón para contrastes y detalles oscuros */
+  --gris-claro: #F5F5F5; /* Gris claro para contrastar con el fondo */
+}
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-dark-gray) var(--color-medium-gray);
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: var(--color-medium-gray);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--color-dark-gray);
+}
+
+::selection {
+  background-color:var(--color-dark-gray);
+}
+
+/* Header */
+
+.header {
+  background-color: var(--beige-navbar);
+  padding: 0.8rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.header.abajo {
+  backdrop-filter: blur(15px);
+  background: rgba(22, 195, 195, 0.296);
+}
+
+.header .logo__header {
+  width: 4.5rem;
+}
+
+nav.nav_menu.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 6.3rem;
+  width: 100%;
+  height: auto;
+  background-color: var(--beige-claro-backgraund);
+  box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%),
+    0 25px 10px -24px rgb(5 5 5 / 10%);
+  animation: ease 0.4s left forwards;
+}
+
+@keyframes left {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+nav.nav_menu.active a {
+  padding: 2rem;
+  font-family: "Cooper Hewitt";
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  color: var(--gris-oscuro-azulado);
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+nav.nav_menu.active a:hover {
+  color: var(--gris-oscuro-azulado);
+  background-color: var(--beige-navbar);
+  transition: all 0.4s;
+}
+
+nav.nav_menu.not-active a {
+  display: none;
+}
+
+nav.nav_menu.active .flags {
+  width: 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+nav.nav_menu.active .flags__item {
+  margin: 0 0.3rem;
+  filter: contrast(65%);
+  cursor: pointer;
+}
+
+nav.nav_menu.not-active .flags {
+  display: none;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translate(-50%, -50%);
+  width: 3rem;
+  cursor: pointer;
+}
+
+#button span {
+  display: block;
+  width: 100%;
+  box-shadow: 0 2px 10px 0 rgb(0, 0, 0, 0.3);
+  border-radius: 3px;
+  height: 0.3rem;
+  background: var(--gris-oscuro-azulado);
+  transition: all 0.3s;
+  position: relative;
+}
+
+span + span {
+  margin-top: 0.6rem;
+}
+
+.active span:nth-child(1) {
+  animation: ease 0.7s top forwards;
+}
+
+.not-active span:nth-child(1) {
+  animation: ease 0.7s top-2 forwards;
+}
+
+.active span:nth-child(2) {
+  animation: ease 0.7s scaled forwards;
+}
+
+.not-active span:nth-child(2) {
+  animation: ease 0.7s scaled-2 forwards;
+}
+
+.active span:nth-child(3) {
+  animation: ease 0.7s bottom forwards;
+}
+
+.not-active span:nth-child(3) {
+  animation: ease 0.7s bottom-2 forwards;
+}
+
+@keyframes top {
+  0% {
+    top: 0;
+    transform: rotate(0);
+  }
+  50% {
+    top: 1rem;
+    transform: rotate(0);
+  }
+  100% {
+    top: 1rem;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes top-2 {
+  0% {
+    top: 0.8rem;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 0.8rem;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bottom {
+  0% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+  50% {
+    bottom: 0.8rem;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 0.8rem;
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes bottom-2 {
+  0% {
+    bottom: 0.8rem;
+    transform: rotate(135deg);
+  }
+  50% {
+    bottom: 0.8rem;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+}
+
+@keyframes scaled {
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes scaled-2 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Home */
+
+.home {
+  background-color: var(--beige-claro-backgraund);
+  width: 100%;
+  height: auto;
+}
+
+.container_image-home {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 12rem 0 5rem 0;
+}
+
+.image_home {
+  max-width: 65%;
+  transition: 0.4s;
+  animation: image 2s;
+}
+
+.home_info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 100px;
+
+  height: 70%;
+  color: var(--gris-oscuro-azulado);
+}
+
+.home_text-1 {
+  font-family: "Cooper Hewitt";
+  font-size: 2rem;
+}
+
+.home_text-2 {
+  font-family: "PT Sans";
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+
+.home_text-3 {
+  font-family: "Cooper Hewitt";
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  width: 28rem;
+  margin: 0 auto;
+  text-align: start;
+}
+
+.text-type {
+  position: relative;
+}
+
+.text-type::after {
+  content: "|";
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  color: var(--gris-oscuro-azulado);
+  background-color: var(--beige-claro-backgraund);
+  width: 100%;
+  animation: typing 4s steps(28) alternate infinite;
+}
+
+@keyframes typing {
+  to {
+    width: 0%;
+  }
+}
+
+.container_parrafo-info {
+  display: none;
+}
+
+
+/* Boton para descargar el curriculum */
+.cv_button {
+  border-radius: 3rem ;
+  border: 1px solid var(--gris-oscuro-azulado) !important;
+  padding: 0.6rem 2rem 0.5rem 2rem;
+  color: var(--gris-oscuro-azulado) !important;
+  background-color:var(--beige-coral);
+  font-family: "Cooper Hewitt";
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 2rem 0;
+  border: none;
+  cursor: pointer;
+}
+
+.cv_button:hover{
+  border: 1px solid var(--gris-oscuro-azulado) !important;
+  color: var(--gris-oscuro-azulado) !important;
+  background-color:var(--beige-coral) !important;
+  transition: all 0.4s ease !important;
+
+}
+
+.contact_button {
+  display: none;
+  background-color:var(--gris-oscuro-azulado) !important;
+  color: var(--beige-coral) !important;
+}
+
+.contact_button:hover{
+  transition: all 0.4s ease !important;
+}
+
+/* Estilos para los enlaces con imágenes */
+.links {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0 6rem 0;
+}
+
+.links img {
+  width: 3.5rem;
+  margin: 0 0.5rem;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-linkedin, .icon-github {
+  background-color: var(--gris-oscuro-azulado);
+}
+
+.links img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(62, 67, 110, 0.5); 
+}
+
+.image_home--border {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.3) 1%);
+  border-radius: 500px 50px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+  .image_home--border {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 3%, rgba(0, 0, 0, 0.2) 17%);
+    /* Difuminado aún más sutil para pantallas pequeñas */
+  }
+}
+
+
+
+/* Sobre mí */
+.sobreMi {
+  background-color: var(--white);
+  width: 100%;
+  height: auto;
+}
+
+.sobreMi h1 {
+  display: block;
+  text-align: center;
+  color: var(--gris-oscuro-azulado);
+  font-family: "Cooper Hewitt";
+  font-size: 2.4rem;
+  letter-spacing: 0.1rem;
+  padding-top: 6rem;
+  margin-bottom: 10px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container_texto-sobreMi {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 4rem 3rem 3rem 3rem;
+}
+
+.container_texto-sobreMi p{
+  text-align: justify;
+}
+
+.title_sobreMi {
+  font-family: "Cooper Hewitt";
+  color: var(--gris-oscuro-azulado);
+  text-align: center;
+  font-size: 2.2rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.texto_sobreMi {
+  color: var(--gris-oscuro-azulado);
+  font-family: "Cooper Hewitt";
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  white-space: pre-line;
+  text-align: justify;
+  line-height: 2.2rem;
+  margin-bottom: 1.5rem; /* Espacio entre los párrafos */
+}
+
+.container_image-sobreMi {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.image_sobreMi {
+  width: 55%;
+  height: 45rem;
+  margin-bottom: 5rem;
+  border-bottom: 2px solid var(--color-very-light-gray);
+  border-radius: 10rem 5rem;
+  object-fit: cover;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.3) 1%);
+}
+
+
+
+:root {
+  --beige-claro-background: #E0F7F9; /* Turquesa claro para el fondo */
+  --beige-navbar: #00B2A9; /* Turquesa medio para la barra de navegación */
+  --beige-coral: #008C8C; /* Turquesa oscuro para detalles destacados */
+  --gris-oscuro-azulado: #2C2C2C; /* Gris carbón para contrastes y detalles oscuros */
+  --gris-claro: #F5F5F5; /* Gris claro para las tarjetas */
+  --gris-medio: #D1D1D1; /* Gris medio para más contraste en tarjetas */
+}
+
+/* Habilidades */
+.habilidades {
+  background-color: var(--beige-claro-background); /* Fondo de sección */
+  width: 100%;
+  padding: 4rem 2rem;
+}
+
+.habilidades h1 {
+  text-align: center;
+  color: var(--gris-oscuro-azulado);
+  font-family: "Cooper Hewitt", sans-serif;
+  font-size: 2.6rem;
+  letter-spacing: 0.15rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive grid for cards */
+.cards_container--habilidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive columns */
+  gap: 2rem;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+/* Card styles */
+.cards--habilidades {
+  background: var(--gris-claro); /* Fondo gris claro para las tarjetas */
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 12rem;
+  height: 12rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card image styles */
+.cards--habilidades img {
+  margin-top: 1rem;
+  width: 6rem;
+  transition: transform 0.3s ease;
+}
+
+/* Card text styles */
+.cards--habilidades p {
+  color: var(--gris-oscuro-azulado); /* Texto oscuro para mayor contraste */
+  font-family: "Cooper Hewitt", sans-serif;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+/* Hover effect */
+.cards--habilidades:hover {
+  transform: scale(1.05); /* Slightly increase size */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Intensify shadow on hover */
+}
+
+/* Hover image effect */
+.cards--habilidades:hover img {
+  transform: scale(1.1);
+}
+
+/* Hide specific images on mobile */
+@media (max-width: 768px) {
+  .puntos1-habilidades,
+  .puntos2-habilidades {
+    display: none;
+  }
+}
+
+
+
+
+
+/* Estudios */
+
+.formacion {
+  background-color: var(--white);
+  width: 100%;
+  height: auto;
+}
+
+.formacion h1 {
+  display: block;
+  text-align: center;
+  color: var(--gris-oscuro-azulado);
+  font-family: "Cooper Hewitt";
+  font-size: 2.4rem;
+  letter-spacing: 0.1rem;
+  padding: 6rem 0 5rem 0;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cards_container--formacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem 3rem 2rem;
+}
+
+.cards--formacion {
+  background-color: var(--beige-claro-backgraund);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 32rem;
+  height: 33rem;
+  margin: 0 1rem 2rem 1rem;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.cards--formacion img {
+  width: 25rem;
+}
+
+.container_texto--formacion {
+  margin-bottom: 1.3rem;
+}
+
+img.logo-unal {
+  width: 24rem;
+  margin: 3rem 0 6rem 0;
+}
+
+img.logo-one {
+  width: 15rem;
+  /* margin: 1rem 0 6rem 0; */
+  object-fit: cover;
+}
+
+.cards--formacion p:nth-child(1) {
+  color: var(--gris-oscuro-azulado);
+  font-family: "Cooper Hewitt";
+  letter-spacing: 0.1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cards--formacion p:nth-child(2) {
+  color: var(--gris-oscuro-azulado);
+  font-family: "Cooper Hewitt";
+  letter-spacing: 0.1rem;
+  font-size: 1.4rem;
+}
+
+/* Proyectos */
+
+.proyectos {
+  background-color: var(--beige-claro-backgraund);
+  width: 100%;
+  height: auto;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.proyectos h1 {
+  display: block;
+  text-align: center;
+  color: var(--gris-oscuro-azulado);
+  font-family: "Cooper Hewitt";
+  font-size: 2.4rem;
+  letter-spacing: 0.1rem;
+  padding: 6rem 0 5rem 0;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.puntos1-proyectos,
+.puntos2-proyectos {
+  display: none;
+}
+
+.cards_container--proyectos {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards--proyectos {
+  border-radius: 20px;
+  padding-bottom: 2rem;
+  background-color: var(--color-very-light-gray);
+  min-width: 33rem;
+  max-width: 38rem;
+  box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%),
+    0 25px 10px -24px rgb(5 5 5 / 10%);
+    
+}
+
+.card_JuegoAhorcado {
+  margin-bottom: 4rem;
+}
+
+.card_portafolio {
+  margin-bottom: 4rem;
+  border: 1px solid var(--color-medium-gray);
+}
+
+.container_imgCard--proyectos {
+  margin-bottom: 1rem;
+  border-radius: 20px 20px 0 0;
+}
+
+.container_imgCard--proyectos img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.container_textCard--proyectos {
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.container_textCard--proyectos h2 {
+  font-family: "Cooper Hewitt";
+  letter-spacing: 0.1rem;
+  font-size: 1.8rem;
+  color: var(--black);
+  font-weight: bold;
+  display: inline;
+}
+
+.container_textCard--proyectos p {
+  color: var(--black);
+  font-family: "Cooper Hewitt";
+  letter-spacing: 0.1rem;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+.container_btn--proyectos {
+  display: flex;
+  justify-content: center;
+}
+
+.container_btn--proyectos a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 1.5rem;
+}
+
+.container_btn--proyectos button {
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn_demo {
+  padding: 0.9rem 0;
+  border: none;
+  background-color: var(--gris-oscuro-azulado);
+  color: var(--beige-coral);
+}
+
+.btn_repo {
+  padding: 0.8rem 0;
+  background: none;
+  color: var(--gris-oscuro-azulado);
+  border: 1px solid var(--gris-oscuro-azulado);
+}
+
+.btn_demo img {
+  width: 2rem;
+  margin-right: 0.8rem;
+}
+.btn_repo img {
+  width: 2rem;
+  margin-right: 0.8rem;
+}
+
+.container_btn--proyectos .btn_demo:hover {
+  background-color: var(--color-dark-gray);
+  box-shadow: 0px 13px 33px -14px rgba(0, 0, 0, 0.75);
+  transition: all 0.4s ease;
+}
+
+.container_btn--proyectos .btn_repo:hover {
+  background: var(--beige-coral);
+  box-shadow: 0px 13px 33px -14px rgba(0, 0, 0, 0.75);
+  transition: all 0.4s ease;
+}
+
+/* Contacto */
+
+.contacto {
+  background-color: var(--white);
+  width: 100%;
+  height: auto;
+  padding: 0 2rem 5rem 2rem;
+}
+
+.contacto h1 {
+  display: block;
+  text-align: center;
+  color: var(--gris-oscuro-azulado);
+  font-family: "Cooper Hewitt";
+  font-size: 2.4rem;
+  letter-spacing: 0.1rem;
+  padding: 6rem 0 4rem 0;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container_img--contacto {
+  display: none;
+}
+
+.container--contacto {
+  width: 100%;
+  background-color: var(--beige-claro-backgraund);
+  border-radius: 24px;
+  padding: 3rem;
+  position: relative;
+}
+
+.container_text--contacto {
+  width: 100%;
+}
+
+.container_text-info p{
+  color: var(--gris-oscuro-azulado);
+}
+
+.container_text--contacto p {
+  font-size: 1.6rem;
+  font-family: "Cooper Hewitt";
+  color: var(--gris-oscuro-azulado);
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+  line-height: 2.3rem;
+}
+
+.form-contact input {
+  font-family: "Cooper Hewitt";
+  background: transparent;
+  border: 1px solid var(--light-grey);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: var(--gris-oscuro-azulado);
+  font-size: 1.6rem;
+  outline: none;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.form-contact input::placeholder {
+  color: var(--gris-oscuro-azulado);
+}
+
+.form-contact .input-invalid {
+  border: 1px solid #574438;
+  color: var(--gris-oscuro-azulado);
+}
+
+.form-contact textarea {
+  background: transparent;
+  border: 1px solid var(--gris-oscuro-azulado);
+  font-family: "Cooper Hewitt";
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: var(--color-very-light-gray);
+  font-size: 1.6rem;
+  outline: none;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+  resize: none;
+}
+
+.form-contact textarea::placeholder {
+  color: var(--gris-oscuro-azulado);
+}
+
+.form-contact textarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+.form-contact textarea::-webkit-scrollbar-track {
+  background-color:var(--gris-oscuro-azulado);
+}
+
+.form-contact textarea::-webkit-scrollbar-thumb {
+  background-color: var(--gris-oscuro-azulado);
+}
+
+.btn_form--contacto {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_form--contacto button {
+  background-color: var(--beige-claro-backgraund);
+  border: 1px solid var(--gris-oscuro-azulado);
+  font-family: "Cooper Hewitt";
+  width: 20rem;
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  color: var(--gris-oscuro-azulado);
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 1s all;
+}
+
+.btn_form--contacto button:hover {
+background-color: var(--beige-claro-backgraund);
+  color: var(--gris-oscuro-azulado);
+  font-weight: bold;
+  transform: scale(1.1);
+  box-shadow: 0px 9px 15px -1px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+}
+
+.btn_form--contacto button:active {
+  background: white;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--gris-oscuro-azulado);
+}
+
+.contianer--footer {
+  border-top: 1px solid var(--color-very-light-gray);
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_redes-footer a {
+  text-decoration: none;
+}
+
+.container_redes-footer img {
+  width: 3.5rem;
+  margin: 0 0.5rem 1.5rem 0.5rem;
+}
+
+.container_redes-footer .icon_codepen--footer {
+  width: 3.1rem;
+  margin-bottom: 1.7rem;
+}
+
+.container_text--footer {
+  padding-bottom: 1rem;
+}
+
+.container_text--footer span {
+  font-family: "Cooper Hewitt";
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.container_text--footer span:nth-child(1),
+.container_text--footer span:nth-child(3) {
+  color: var(--light-grey);
+}
+
+.container_text--footer img {
+  width: 1.2rem;
+  margin: 0 0.2rem;
+}
+
+.container_text--footer span:nth-child(4) {
+  color: var(--color-dark-gray);
+  letter-spacing: 0.1rem;
+  margin-left: 0.2rem;
+}
+
+/* Botón ir arriba */
+
+.go-top-container {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 6rem;
+  height: 6rem;
+  z-index: -1;
+}
+
+.go-top-button {
+  width: 0rem;
+  height: 0rem;
+  background-color: var(--color-medium-gray);
+   /* background: rgba(167, 137, 118, 1);  PARA CAMBIAR EL COLOR DE BOTON IR ARRIBA*/ 
+  box-shadow: 0px 6px 22px -6px rgba(0, 0, 0, 0.75);
+  border-radius: 50%;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: 0.2s;
+}
+
+.go-top-button i {
+  position: absolute;
+  font-size: 1.7rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: var(--black);
+  transition: 0.2s;
+}
+
+.show {
+  z-index: 10;
+}
+
+.show .go-top-button {
+  animation: popup 0.3s ease-in-out;
+  width: 6rem;
+  height: 6rem;
+  z-index: 11;
+}
+
+.show i {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  50% {
+    width: 7rem;
+    height: 7rem;
+  }
+  100% {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+.footer-by {
+  color: #ffffff;
+}

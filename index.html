@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio | Ana Celeste Pèrez Desarrolladora Web" />
+    <meta name="robots" content="index,follow" />
+
+    <title>Ana Celeste | Desarrolladora Web Front-End</title>
+
+    <!-- Librerías -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="./assets/stylesheet/loader.css" />
+    <link rel="stylesheet" href="./assets/stylesheet/index.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/stylesheet/tablet.css"
+      media="screen and (min-width: 760px)" />
+    <link
+      rel="stylesheet"
+      href="./assets/stylesheet/desktop.css"
+      media="screen and (min-width: 980px)" />
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/ae0fd6f99f.js"
+      crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="container--loader">
+      <div class="loader"></div>
+    </div>
+
+    <header class="header">
+      <img
+        src="./assets/images/Aceleste.png"
+        alt="Logo Portafolio"
+        class="logo__header" />
+
+      <nav class="nav_menu not-active">
+        <a href="#home" class="active">Home</a>
+        <a href="#sobreMi" data-section="menu" data-value="item2">Sobre mí</a>
+        <a href="#habilidades" data-section="menu" data-value="item3"
+          >Habilidades</a
+        >
+        <a href="#formacion" data-section="menu" data-value="item4"
+          >Formación</a
+        >
+        <a href="#proyectos" data-section="menu" data-value="item5"
+          >Proyectos</a
+        >
+        <a href="#contacto" data-section="menu" data-value="item6">Contacto</a>
+      </nav>
+
+      <div id="button" class="btn not-active">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <main>
+      <!-- Home -->
+      <section class="home" id="home">
+        <picture class="container_image-home" data-aos="zoom-in">
+          <img
+            class="image_home image_home--border"
+            src="/assets/images/img-centro-portafolio.png"
+            alt="Ilustración de taza de cafe" />
+          <img
+            class="image_home"
+            src="./assets/images/puntos.png"
+            alt="Ilustración de taza de cafe" />
+        </picture>
+
+        <div class="home_info">
+          <div class="container_text-info">
+            <p class="home_text-1" data-section="home" data-value="home_text-1">
+              Hola! Soy
+            </p>
+            <p class="home_text-2">Celeste</p>
+          </div>
+
+          <div>
+            <p
+              class="home_text-3 text-type"
+              data-section="home"
+              data-value="home_text-3">
+              Desarrolladora web Front-End
+            </p>
+          </div>
+
+          <div class="container_parrafo-info">
+            <p data-section="home" data-value="parrafo-info">
+              Soy una desarrolladora web frontend dedicada a crear interfaces de
+              usuario visualmente atractivas y funcionales. Apasionada por el
+              diseño intuitivo y la experiencia del usuario, siempre me esfuerzo
+              por mejorar y aprender nuevas técnicas para ofrecer proyectos
+              excepcionales. Mi compromiso constante con el estudio y la mejora
+              continua me impulsa a superar desafíos y a aportar valor en cada
+              proyecto en el que trabajo.
+            </p>
+          </div>
+
+          <div class="container_button">
+            <a
+              href="https://drive.google.com/file/d/1SItM3VavOlb9aiP7hmxv4OH7SkVCIsys/view?usp=sharing"
+              target="_blank">
+              <button
+                class="cv_button"
+                data-section="home"
+                data-value="cv_button">
+                Descargar CV
+              </button>
+            </a>
+            <a href="#contacto">
+              <button
+                class="contact_button"
+                data-section="home"
+                data-value="contact_button">
+                Contacto
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="links">
+          <a
+            href="https://www.linkedin.com/in/ana-celeste-perez-oviedo-29bb0218a/"
+            target="_blank">
+            <img
+              src="./assets/images/icon-linkedin.png"
+              alt="LinkedIn"
+              class="icon-linkedin" />
+          </a>
+          <a href="https://github.com/Celeste941" target="_blank">
+            <img
+              src="./assets/images/icon-github.png"
+              alt="GitHub"
+              class="icon-github" />
+          </a>
+        </div>
+      </section>
+
+      <!-- sobre mi -->
+      <section class="sobreMi" id="sobreMi">
+        <div class="container_content-sobreMi" data-aos="fade-right">
+          <div class="container_texto-sobreMi">
+            <h1 data-section="sobre-mi" data-value="title" data-aos="fade-up">
+              Sobre mí
+            </h1>
+            <p
+              class="texto_sobreMi"
+              data-section="sobre-mi"
+              data-value="texto_sobreMi">
+              Hola, soy Celeste, una desarrolladora frontend apasionada y
+              autodidacta, especializada en la creación de interfaces de usuario
+              atractivas y funcionales.
+            </p>
+            <p
+              class="texto_sobreMi"
+              data-section="sobre-mi"
+              data-value="texto_sobreMi">
+              Mi formación en tecnologías web modernas me ha permitido
+              desarrollar habilidades sólidas en desarrollo frontend y diseño
+              intuitivo, lo que me motiva a seguir aprendiendo y mejorando cada
+              día.
+            </p>
+            <p
+              class="texto_sobreMi"
+              data-section="sobre-mi"
+              data-value="texto_sobreMi">
+              Aunque inicialmente estudié odontología, descubrí mi verdadera
+              pasión en el desarrollo web. Esta transición me ha dado una
+              perspectiva única y una gran determinación para destacar en este
+              nuevo campo.
+            </p>
+          </div>
+          <picture class="container_image-sobreMi">
+            <img
+              class="image_sobreMi"
+              src="/assets/images/flores-sobre-mi.avif" />
+          </picture>
+
+          <div class="container_texto-sobreMi">
+            <p
+              class="texto_sobreMi"
+              data-section="sobre-mi"
+              data-value="texto_sobreMi">
+              Estoy entusiasmada por comenzar mi carrera en el desarrollo web,
+              donde puedo aplicar mis conocimientos y colaborar en equipo. Lista
+              para contribuir con mi energía y habilidades a proyectos que
+              ofrezcan experiencias excepcionales a los usuarios, aprovechando
+              mi experiencia en odontología y mi formación en desarrollo web.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Habilidades -->
+      <section class="habilidades" id="habilidades">
+        <h1 data-section="habilidades" data-value="title" data-aos="fade-up">
+          Habilidades
+        </h1>
+
+        <img
+          src="./assets/images/puntos.png"
+          alt="Decoración puntos"
+          class="puntos1-habilidades" />
+        <img
+          src="./assets/images/puntos.png"
+          alt="Decoración puntos"
+          class="puntos2-habilidades" />
+
+        <div class="cards_container--habilidades">
+          <div
+            class="cards--habilidades"
+            data-aos="fade-up"
+            data-aos-duration="500">
+            <img src="./assets/images/icon-html.png" alt="HTML" />
+            <p>HTML 5</p>
+          </div>
+
+          <div
+            class="cards--habilidades"
+            data-aos="fade-up"
+            data-aos-duration="700">
+            <img src="./assets/images/icon-css.png" alt="CSS" />
+            <p>CSS 3</p>
+          </div>
+
+          <div
+            class="cards--habilidades"
+            data-aos="fade-up"
+            data-aos-duration="900">
+            <img src="./assets/images/icon-js.png" alt="JavaScript" />
+            <p>JavaScript</p>
+          </div>
+
+          <div
+            class="cards--habilidades"
+            data-aos="fade-up"
+            data-aos-duration="1100">
+            <img
+              src="./assets/images/bootstrap-removebg-preview.png"
+              alt="Bootstrap" />
+            <p>Bootstrap</p>
+          </div>
+
+          <div
+            class="cards--habilidades"
+            data-aos="fade-up"
+            data-aos-duration="500">
+            <img
+              src="./assets/images/vue.js-removebg-preview.png"
+              alt="Vue.js" />
+            <p>Vue.js</p>
+          </div>
+
+          <div
+            class="cards--habilidades"
+            data-aos="fade-up"
+            data-aos-duration="700">
+            <img src="./assets/images/icon-git.png" alt="Git" />
+            <p>Git</p>
+          </div>
+
+          <div
+            class="cards--habilidades"
+            data-aos="fade-up"
+            data-aos-duration="900">
+            <img src="./assets/images/icon-github-hab.png" alt="GitHub" />
+            <p>GitHub</p>
+          </div>
+
+          <div
+            class="cards--habilidades"
+            data-aos="fade-up"
+            data-aos-duration="1100">
+            <img src="./assets/images/sass-removebg-preview.png" alt="Sass" />
+            <p>Sass</p>
+          </div>
+
+          <div
+            class="cards--habilidades"
+            data-aos="fade-up"
+            data-aos-duration="1100">
+            <img
+              src="./assets/images/jquery-removebg-preview.png"
+              alt="jQuery" />
+            <p>jQuery</p>
+          </div>
+
+          <div
+            class="cards--habilidades"
+            data-aos="fade-up"
+            data-aos-duration="1100">
+            <img src="./assets/images/node.js.jpeg" alt="Node.js" />
+            <p>Node.js</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formación -->
+      <section class="formacion" id="formacion">
+        <h1 data-section="formacion" data-value="title" data-aos="fade-up">
+          Estudios
+        </h1>
+
+        <div class="cards_container--formacion">
+          <div
+            class="cards--formacion"
+            data-aos="fade-up"
+            data-aos-duration="500">
+            <img
+              class="logo-one"
+              src="./assets/images/ugma-removebg-preview.png"
+              alt="Logo - ONE: Oracle Next Education" />
+            <div class="container_texto--formacion">
+              <p data-section="formacion" data-value="formacion2">
+                Odontología
+              </p>
+              <p data-section="formacion" data-value="tiempo-formacion2">
+                2015
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="cards--formacion"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="500">
+            <img class="logo-unal" src="./assets/images/desafio-latam.png" />
+            <div class="container_texto--formacion">
+              <p data-section="formacion" data-value="formacion1">
+                Desarrolladora web
+              </p>
+              <p data-section="formacion" data-value="tiempo-formacion1">
+                2024
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proyectos -->
+      <section class="proyectos" id="proyectos">
+        <!-- Título de la sección de proyectos -->
+        <h1 data-section="proyectos" data-value="title" data-aos="fade-up">
+          Proyectos
+        </h1>
+
+        <!-- Imágenes decorativas en la sección de proyectos -->
+        <img
+          src="./assets/images/puntos.png"
+          alt="Decoración puntos"
+          class="puntos1-proyectos" />
+        <img
+          src="./assets/images/puntos.png"
+          alt="Decoración puntos"
+          class="puntos2-proyectos" />
+
+        <!-- Contenedor de tarjetas de proyectos -->
+        <div class="cards_container--proyectos">
+          <!-- Tarjeta de proyecto: Portafolio -->
+          <div
+            class="cards--proyectos card_portafolio"
+            data-aos="zoom-in-up"
+            data-aos-anchor-placement="center-bottom">
+            <!-- Contenedor de la imagen del proyecto -->
+            <div class="container_imgCard--proyectos">
+              <img
+                src="./assets/images/miPortafolio-imgPrincipal.png"
+                alt="Proyecto: Portafolio" />
+            </div>
+
+            <!-- Contenedor del texto descriptivo del proyecto -->
+            <div class="container_textCard--proyectos text-portafolio">
+              <h2 data-section="proyectos" data-value="title-proyecto2">
+                Portafolio
+              </h2>
+              <p data-section="proyectos" data-value="info-proyecto2">
+                Mi portafolio web personal, donde se encuentran algunos de mis
+                proyectos más destacados, mis habilidades técnicas y un poco
+                sobre mi formación.
+              </p>
+            </div>
+
+            <!-- Contenedor de botones de acción del proyecto -->
+            <div class="container_btn--proyectos">
+              <!-- Botón para la demo del proyecto -->
+              <a href="#" target="_blank">
+                <button class="btn_demo">
+                  <img
+                    src="./assets/images/icon-demoProyecto.png"
+                    alt="Demostración" />DEMO
+                </button>
+              </a>
+
+              <!-- Botón para el repositorio del proyecto en GitHub -->
+              <a href="" target="_blank">
+                <button class="btn_repo">
+                  <img
+                    src="./assets/images/icon-githubProyecto.png"
+                    alt="Repositorio de github" />REPO
+                </button>
+              </a>
+            </div>
+          </div>
+          <!-- Tarjeta de proyecto: PokeApi -->
+          <div
+            class="cards--proyectos card_JuegoAhorcado"
+            data-aos="zoom-in-up"
+            data-aos-anchor-placement="center-bottom">
+            <!-- Contenedor de la imagen del proyecto -->
+            <div class="container_imgCard--proyectos">
+              <img
+                src="./assets/images/pokeApi.png"
+                alt="Proyecto: Juego del ahorcado" />
+            </div>
+
+            <!-- Contenedor del texto descriptivo del proyecto -->
+            <div class="container_textCard--proyectos">
+              <h2 data-section="proyectos" data-value="title-proyecto1">
+                Poke Api
+              </h2>
+              <p data-section="proyectos" data-value="info-proyecto1">
+                "¿Quién es ese Pokémon?" es una aplicación interactiva
+                construida con Vue.js que permite a los usuarios descubrir
+                Pokémon al adivinar sus nombres.
+              </p>
+            </div>
+
+            <!-- Contenedor de botones de acción del proyecto -->
+            <div class="container_btn--proyectos">
+              <!-- Botón para la demo del proyecto -->
+              <a href="" target="_blank">
+                <button class="btn_demo">
+                  <img
+                    src="./assets/images/icon-demoProyecto.png"
+                    alt="Demostración" />DEMO
+                </button>
+              </a>
+
+              <!-- Botón para el repositorio del proyecto en GitHub -->
+              <a
+                href="https://github.com/Celeste941/interfaces-interactivas-vue-pokeapi"
+                target="_blank">
+                <button class="btn_repo">
+                  <img
+                    src="./assets/images/icon-githubProyecto.png"
+                    alt="Repositorio de github" />REPO
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <!-- Tarjeta de proyecto: Templates y rendering en Vue -->
+          <div
+            class="cards--proyectos card_encriptador"
+            data-aos="zoom-in-up"
+            data-aos-anchor-placement="center-bottom">
+            <!-- Contenedor de la imagen del proyecto -->
+            <div class="container_imgCard--proyectos">
+              <img src="./assets/images/img-proyecto-desafio.png" />
+            </div>
+
+            <!-- Contenedor del texto descriptivo del proyecto -->
+            <div class="container_textCard--proyectos">
+              <h2 data-section="proyectos" data-value="title-proyecto3">
+                Templates y rendering en Vue
+              </h2>
+              <p data-section="proyectos" data-value="info-proyecto3">
+                Este proyecto es un formulario interactivo desarrollado con
+                Vue.js que permite a los usuarios personalizar las propiedades
+                de un cuadro dinámico.
+              </p>
+            </div>
+
+            <!-- Contenedor de botones de acción del proyecto -->
+            <div class="container_btn--proyectos">
+              <!-- Botón para la demo del proyecto -->
+              <a href="" target="_blank">
+                <button class="btn_demo">
+                  <img
+                    src="./assets/images/icon-demoProyecto.png"
+                    alt="Demostración" />DEMO
+                </button>
+              </a>
+
+              <!-- Botón para el repositorio del proyecto en GitHub -->
+              <a
+                href="https://github.com/Celeste941/DesafIo--emplates-rendering-Vue"
+                target="_blank">
+                <button class="btn_repo">
+                  <img
+                    src="./assets/images/icon-githubProyecto.png"
+                    alt="Repositorio de github" />REPO
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section class="contacto" id="contacto">
+        <!-- Título de la sección de contacto -->
+        <h1 data-section="contacto" data-value="title" data-aos="fade-up">
+          Contacto
+        </h1>
+
+        <!-- Contenedor principal del formulario de contacto -->
+        <div
+          class="container_box--contacto"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom">
+          <!-- Contenedor interno de la sección de contacto -->
+          <div class="container--contacto">
+            <!-- Texto descriptivo antes del formulario de contacto -->
+            <div class="container_text--contacto">
+              <p data-section="contacto" data-value="text">
+                Completa el siguiente formulario y me pondré en contacto contigo
+                lo antes posible.
+              </p>
+            </div>
+
+            <!-- Formulario de contacto -->
+            <form
+              id="form"
+              class="form-contact"
+              name="contacto-portafolio"
+              action="https://formspree.io/f/xqazblld"
+              method="POST">
+              <!-- Campo para el nombre del usuario -->
+              <input
+                id="nombre"
+                type="text"
+                name="name"
+                placeholder="Nombre"
+                required />
+
+              <!-- Campo para el correo electrónico del usuario -->
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Correo electrónico"
+                required />
+
+              <!-- Campo para el asunto del mensaje -->
+              <input
+                id="asunto"
+                type="text"
+                name="affair"
+                placeholder="Asunto"
+                required />
+
+              <!-- Campo de texto para el mensaje del usuario -->
+              <textarea
+                id="mensaje"
+                cols="20"
+                rows="4"
+                name="message"
+                placeholder="Mensaje"
+                required></textarea>
+
+              <!-- Botón para enviar el formulario -->
+              <div class="btn_form--contacto">
+                <button
+                  id="btn-enviar"
+                  type="submit"
+                  data-section="contacto"
+                  data-value="btn-enviar">
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="contianer--footer">
+        <div class="container_redes-footer">
+          <a
+            href="https://www.linkedin.com/in/roimer-maestre-3b5539304/"
+            target="_blank">
+            <img src="./assets/images/icon-linkedin.png" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/RoimerMaestre" target="_blank">
+            <img src="./assets/images/icon-github.png" alt="GitHub" />
+          </a>
+          <!-- <a href="https://codepen.io/mariasmoUN" target="_blank">
+                    <img src="./assets/images/icon-codepen.png" alt="CodePen" class="icon_codepen--footer">
+                </a>
+                <a href="https://www.instagram.com/mar.am0410/?next=%2F" target="_blank">
+                    <img src="./assets/images/icon-instagram.png" alt="Instagram"">
+                </a> -->
+        </div>
+
+        <div class="container_text--footer">
+          <span>Copyright © | Coded with</span>
+          <!-- <img src="./assets/images/icon-corazon.png" alt="Corazón"> -->
+          <span class="footer-by">| by </span>
+          <span>Ana Celeste Pérez</span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="go-top-container">
+      <div class="go-top-button">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+    </div>
+
+    <!-- Archivo Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Librería de animaciones -->
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Mi script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
